@@ -42,7 +42,7 @@
             const userListParent = userList.parentNode;
             toggleDisplay(userListParent);
             toggleDisplay(userListParent.nextElementSibling);
-        })
+        });
 
         orgButton.insertAdjacentElement('beforebegin', button);
     }, 3000);
