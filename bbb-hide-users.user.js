@@ -6,6 +6,7 @@
 // @author       TheDarkTron
 // @license      MIT
 // @match        *://*/html5client/join?sessionToken=*
+// @icon         https://www.google.com/s2/favicons?domain=bigbluebutton.org
 // @run-at       document-idle
 // @grant        none
 // ==/UserScript==
