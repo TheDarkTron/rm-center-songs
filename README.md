@@ -11,3 +11,7 @@ This script centers the song and show panels on RauteMusik [https://rm.fm/house/
 ## BBB Hide Users
 
 Adds a button next to the "show users" button so you can hide the users list without hiding the public chat in Big Blue Button video conferences.
+
+## Wide StackOverflow
+
+Display the content of StackOverflow at 90% width

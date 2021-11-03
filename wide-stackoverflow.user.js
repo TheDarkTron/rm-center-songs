@@ -2,7 +2,7 @@
 // @name         Wide StackOverflow
 // @namespace    http://tampermonkey.net/
 // @version      0.1
-// @description  Make StackOverflow great again! Display StackOverflow at 90% widenes.
+// @description  Make StackOverflow great again! Display StackOverflow at 90% width.
 // @author       TheDarkTron
 // @license      MIT
 // @match        *://stackoverflow.com/*
