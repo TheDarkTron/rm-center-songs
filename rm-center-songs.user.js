@@ -11,16 +11,16 @@
 // @run-at       document-start
 // ==/UserScript==
 
-GM_addStyle ( `
+GM_addStyle (`
     rm-track > div {
         left: 25%;
         width: 330px;
         position: relative;
     }
+
     rm-show > div {
         left: 25%;
         width: 330px;
         position: relative;
     }
-` );
-
+`);

@@ -14,6 +14,6 @@
 (function() {
     'use strict';
 
-    document.querySelector('body > div.container').setAttribute('style', 'max-width: 90%')
-    document.querySelector('#content').setAttribute('style', 'max-width: 90%')
+    document.querySelector('body > div.container').setAttribute('style', 'max-width: 90%');
+    document.querySelector('#content').setAttribute('style', 'max-width: 90%');
 })();
