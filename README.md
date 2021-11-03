@@ -1,6 +1,13 @@
-# RM Center Songs
+# Userscripts
 
-This script centers the song and show panels on RauteMusik [https://rm.fm/house/feed](https://rm.fm/house/feed)
+This repo contains userscripts for greasemonkey, tapermonkey or other userscript extensions.
+
+## RM Center Songs
+
+This script centers the song and show panels on RauteMusik [https://rm.fm/house/feed](https://rm.fm/house/feed).
 
 ![screenshot1](https://github.com/TheDarkTron/rm-center-songs/blob/1dd9d37da7e4da23fe8edc70e5715d8127a2003d/doc/screenshot1.png)
 
+## BBB Hide Users
+
+Adds a button next to the "show users" button so you can hide the users list without hiding the public chat in Big Blue Button video conferences.
