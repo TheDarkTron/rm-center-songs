@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name         RM Center Songs
-// @namespace    http://tampermonkey.net/
+// @namespace    https://openuserjs.org/users/TheDarkTron
 // @version      1.1
 // @description  Center the song and show panels on RM.FM
 // @author       TheDarkTron

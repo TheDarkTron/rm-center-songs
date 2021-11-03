@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name         Wide StackOverflow
-// @namespace    http://tampermonkey.net/
+// @namespace    https://openuserjs.org/users/TheDarkTron
 // @version      1.0
 // @description  Make StackOverflow great again! Display StackOverflow at 90% width.
 // @author       TheDarkTron

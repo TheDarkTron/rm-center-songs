@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         BBB Hide Users
-// @namespace    http://tampermonkey.net/
-// @version      0.1
+// @namespace    https://openuserjs.org/users/TheDarkTron
+// @version      0.2
 // @description  Adds a button next to the "show users" button so you can hide the users list without hiding the public chat in Big Blue Button video conferences
 // @author       TheDarkTron
 // @license      MIT
