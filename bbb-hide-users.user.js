@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         BBB Hide Users
-// @namespace    https://openuserjs.org/users/TheDarkTron
-// @version      0.2
+// @namespace    http://tampermonkey.net/
+// @version      0.3
 // @description  Adds a button next to the "show users" button so you can hide the users list without hiding the public chat in Big Blue Button video conferences
 // @author       TheDarkTron
 // @license      MIT
@@ -29,7 +29,12 @@
     // wait till bbb ajax calls are ready
     setTimeout(function() {
         // add button
+        // old bbb version
         let orgButton = document.querySelector('#app > main > section button[aria-label="Users and messages toggle"');
+        // new bbb version
+        if (!orgButton) {
+            orgButton = document.querySelector('#tippy-2');
+        }
 
         let button = orgButton.cloneNode(true);
         button.children[1].innerText = 'Hide Users';
@@ -37,13 +42,22 @@
         button.setAttribute('aria-label', 'Hide Users');
 
         button.addEventListener('click', function() {
-            const userList = document.querySelector('#app > main > section div[aria-label="User list"]');
-            if (!userList) return;
-            const userListParent = userList.parentNode;
-            toggleDisplay(userListParent);
-            toggleDisplay(userListParent.nextElementSibling);
-        });
+            // first is for new bbb second is for old bbb
+            const userList = document.querySelector('#layout > div:nth-child(1)') ?? document.querySelector('main > section > div:nth-child(1)');
+            const chat = document.querySelector('#layout > div:nth-child(2)') ?? document.querySelector('main > section > div:nth-child(3)');
 
-        orgButton.insertAdjacentElement('beforebegin', button);
+            // toggle chat distance to left
+            let oldLeft = 0;
+            if (chat.style.left !== 0) {
+                oldLeft = chat.style.left;
+                chat.style.left = 0;
+            } else {
+                chat.style.left = oldLeft;
+            }
+
+            toggleDisplay(userList);
+        })
+
+        orgButton.parentNode.appendChild(button);
     }, 3000);
 })();
