@@ -11,13 +11,13 @@
 // @homepageURL  https://github.com/TheDarkTron/userscripts
 // @match        *://stackoverflow.com/*
 // @match        *://*.stackexchange.com/*
-// @icon         https://www.google.com/s2/favicons?domain=stackoverflow.com
+// @icon         https://cdn.sstatic.net/Sites/stackoverflow/Img/favicon.ico
 // @grant        none
 // ==/UserScript==
 
 (function() {
-    'use strict';
+  'use strict';
 
-    document.querySelector('body > div.container').setAttribute('style', 'max-width: 90%');
-    document.querySelector('#content').setAttribute('style', 'max-width: 90%');
+  document.querySelector('body > div.container').setAttribute('style', 'max-width: 90%');
+  document.querySelector('#content').setAttribute('style', 'max-width: 90%');
 })();

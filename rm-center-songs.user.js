@@ -10,14 +10,14 @@
 // @copyright    2021, TheDarkTron (https://openuserjs.org/users/TheDarkTron)
 // @homepageURL  https://github.com/TheDarkTron/userscripts
 // @match        https://www.rm.fm/*/feed
-// @icon         https://www.google.com/s2/favicons?domain=rm.fm
+// @icon         https://www.rm.fm/favicon.ico
 // @grant        GM_addStyle
 // @run-at       document-start
 // ==/UserScript==
 
 /* jshint esversion: 6 */
 
-GM_addStyle (`
+GM_addStyle(`
     rm-track > div {
         left: 25%;
         width: 330px;
